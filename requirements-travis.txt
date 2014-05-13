@@ -1,0 +1,7 @@
+# test tools
+nose
+tox
+
+# code quality
+flake8
+coverage

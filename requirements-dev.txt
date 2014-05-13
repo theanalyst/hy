@@ -1,11 +1,4 @@
-# test tools
-nose
-tox
-
-# code quality
-flake8
-coverage
-
+-r requirements-travis.txt
 # documentation
 Pygments>=1.6
 Sphinx
