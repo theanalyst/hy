@@ -7,7 +7,7 @@ nose=nosetests
 pcache=$(HOME)/.pip-cache
 
 ifeq (PyPy 2.4,$(findstring PyPy 2.4,$(shell python -V 2>&1 | tail -1)))
-	bad_pypy=1
+	bad_pypy=0
 	python=./pypy
 	pip=./pip
 	coveralls=./coveralls
