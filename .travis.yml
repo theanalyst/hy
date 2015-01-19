@@ -10,7 +10,10 @@ cache:
   directories: 
   - $HOME/.pip-cache
 # command to run tests
-script: make travis
+
+script:
+  - pip install -r requirements-travis.txt --download-cache $HOME/.pip-cache
+  - make travis
 after_success: make coveralls
 notifications:
   email:
